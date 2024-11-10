@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileston_04</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body">
+    <h1>Editable and Dynamic Resume Builder</h1>
+<form id="form"><h2>Resume Form</h2>
+<fieldset class="fieldset">
+    <legend>Personal Information</legend>
+    <label for="name">Name</label>
+    <input class="input" type="text" id="name" placeholder="enter your name" required>
+     <br>
+
+    <label for="email">Email:</label>
+    <input class="input" type="text" id="email" placeholder="enter your email" required>
+    <br>
+
+    <label for="Phone">Cell Number</label>
+    <input class="input" type="tel" id="phone" placeholder="enter your phone number" required>
+</fieldset>
+
+
+<fieldset class="fieldset">
+    <legend>Education</legend>
+    <label for="Education">Education</label>
+    <textarea class="input" name="Education" id="Education" placeholder="enter your Education" required></textarea>
+</fieldset>
+
+
+<fieldset class="fieldset">
+    <legend>Experience</legend>
+    <label for="Experience">Experience</label>
+    <textarea class="input" name="Experience" id="Experience" placeholder="enter your Experience" required></textarea>
+</fieldset>
+
+
+<fieldset class="fieldset">
+    <legend>Skills</legend>
+    <label for="Skills">Skills</label>
+    <textarea class="input" name="Skills" id="Skills" placeholder="enter your Skills" required></textarea>
+</fieldset>
+<br>
+<button class="button" type="submit">Generate Resume</button>
+</form>
+
+<br>
+<br>
+
+<div id="Resume-display" contenteditable="true">
+
+    <!-- our resume will be dispayed here -->
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
